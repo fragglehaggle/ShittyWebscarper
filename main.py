@@ -3,7 +3,7 @@ import urllib.parse
 from bs4 import BeautifulSoup
 
 CMN_URL = 'https://2e.aonprd.com/' # url prefix for image linking - HTML doesn't store natively
-i = range(1,5)
+i = range(1,1051)
 for n in i:
     url = 'https://2e.aonprd.com/Monsters.aspx?ID={}'.format(n)
     page = requests.get(url)
