@@ -8,7 +8,7 @@ for n in range(7,1051):
     #print(f"getting {url}")
     soup = BeautifulSoup(
     page.content, 'html.parser')  # I don't know currently, but I think it's just a HTML parse
-    title = soup.h1.string
+    title = soup.title
     print(title)
     #title = soup.find(
     #'h1', class_='title')  #Finds information based on the soup class parse the H1 class for the website - For AEONPRD the H1 text is the name of the monster
